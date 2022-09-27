@@ -41,10 +41,14 @@ body {
     justify-content: space-around;
     border-radius: 12px;
     margin-bottom: 12px;
+    
+}
+#Movie{
+    appearance: none;
 }
 .options{
     display: flex;
-    background-color: var(--colur-wite);
+    background-color: rgba(255, 255, 255, 0.786);
     height: 50px;
     width: 500px;
     align-items: center;
@@ -60,10 +64,67 @@ li{
     list-style: none;
     align-items: center;
 }
-
-.sets{
+.seat{
+    width: 20px;
+    height: 20px;
+    margin : 10px;   
+    background-color: rgba(255, 255, 255, 0.735);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.selected {
     width: 20px;
     height: 20px;
     margin : 10px;
-    background-color: var(--colour-orange);
+    background-color: rgba(0, 128, 0, 0.842);
+    
+}
+.Ocupied {
+    width: 20px;
+    height: 20px;
+    margin : 10px;
+    background-color: rgba(0, 0, 0, 0.519);
+    
+}
+.screen-container{
+    width: 360px;
+    height: 100px;
+    perspective: 700px;
+}
+.options .seat:hover{
+    cursor: default;
+    background-color: rgba(255, 255, 255, 0.735);
+}
+.options .selected:hover{
+    cursor: default;
+    background-color: rgba(0, 128, 0, 0.842);
+}
+.options .Ocupied:hover{
+    cursor: default;
+    background-color: rgba(0, 0, 0, 0.519);
+}
+.screen{
+    margin: 12px;
+    width: 340px;
+    height: 100px;
+    background-color: white;
+    transform: rotateX(-45deg);
+}
+.row{
+    display: flex;
+}
+.seat:hover {
+    background-color: rgba(0, 128, 0, 0.842);
+    cursor: pointer;
+}
+.Ocupied:hover {
+    background-color: rgba(0, 0, 0, 0.651);
+    cursor: default;
+}
+.selected:hover {
+    background-color: rgba(0, 128, 0, 0.842);
+    cursor: pointer;
+}
+.discription {
+    margin: 12px;
 }
